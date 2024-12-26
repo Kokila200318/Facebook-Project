@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login page</title>
+
+    
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .center img{
+            height: 100px;
+            padding: 20px 630px ;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        } 
+        form{
+
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: auto;
+            padding: 10px 0px 14px 0px;
+            width: 395px;
+        }
+        form p{
+            text-align: center;
+            padding: 20px;
+            }
+        input[type="text"],
+        input[type="password"]{
+            padding: 13px 90px;
+            margin: 15px;
+            display: flex;
+            border-color: gainsboro;
+            border-radius: 4px;
+        }
+        
+        input::placeholder{
+            outline: gray;
+            font-weight: bold;
+        }
+        input[type="submit"]{
+            padding: 13px 155px;
+            margin: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            background-color: #1877f2;
+            color: white;
+            clear: both;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: blue;
+        }
+        .links{
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+        }
+        a{
+            color: #1877f2;
+            text-decoration: none;
+
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="center">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="">
+    </div>
+    <form>
+        <p>Log in to Facebook</p>
+        <input type="text" placeholder="Email address or phone">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Log in"> 
+        <div class="links">
+            <a href="ForgotAccount.html">Forgotten account?</a>.
+            <a href="SignUp.html">Sign up for Facebook</a>
+        </div>
+        </form>
+
+</body>
+</html>
+

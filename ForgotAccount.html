@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            overflow-y: scroll;
+        }
+        
+        .main-box{
+            align-items: center;
+            justify-content: center;
+            padding: 100px 400px ;
+            background-color: rgb(211, 211, 211);
+            
+        }
+        
+         form{
+            width: 450px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: 15px;
+            padding: 15px 30px;
+            border-radius: 10px;
+            height:270px;
+            background-color: white;
+     }
+       h1{
+        padding: 10px 30px;
+       }
+      .box{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        border-radius: 15px;
+        padding: 20px 10px 20px 10px;
+        width: 100%;
+        margin: auto;
+    }
+
+      input[type="text"]{
+        border-radius: 4px;
+        padding: 19px 120px;
+        display: block;
+        border-color:gainsboro;
+        margin: 4px;
+     }
+      input::placeholder{
+        font-weight: bold;
+        font-style: italic;
+        text-align:left;
+        
+     }
+        
+     .cancel-button{
+        border-radius: 5px;
+        padding: 8px 20px;
+        float: right;
+        cursor: pointer;
+        margin: 20px;
+        
+     }
+     .Search-button{
+        background-color: #3399f2;
+        color: white;
+        margin-top: 20px;
+        border-radius: 5px;
+        padding: 8px 20px;
+        float: right;
+        cursor: pointer;
+     }
+     .Search-button:hover{
+        background-color: #0662b3;
+     }
+     .cancel-button:hover{
+        background-color: #0662b3;
+     }
+     
+     fieldset input[type="submit"]{
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 10px;
+        background-color: #3399f2;
+        color: white;
+        float: right;
+        cursor: pointer;
+     }
+      fieldset  input[type="submit"]:hover{
+        background-color: gainsboro;
+     }
+     fieldset input[type="text"],
+     input[type="password"]{
+        padding: 10px 20px;
+        margin: 5px;
+        float: right;
+        border-color: 1px inset azure;
+        
+     }
+     .f-password{
+        float: right;
+        padding: 10px 20px;
+        margin: 5px;
+        color: #3399f2;
+        cursor: pointer;
+        
+     }
+     .f-password:hover{
+        text-decoration: underline;
+     }
+     img{
+        width: 10%;
+        color: blue;
+        padding-top: 5px;
+        margin-left: 20px;
+       
+     }
+     fieldset{
+        border-color: azure;
+        border: none;
+     }
+    
+    </style>
+</head>
+<body>
+    <fieldset>
+    
+        <div class="f-password">Forgotten account?</div>
+        
+        <input type="submit" value="Log in">
+        <input type="password" placeholder="Password">
+        <input type="text" placeholder="Email or phone">
+        
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="">
+    
+    </fieldset>
+    
+    <div class="main-box">
+    <form>
+     <h2>Find Your Account</h2>
+       <div class="box">
+       <p>Please enter your email address or mobile number to search for your account.</p>
+       <input type="text" autofocus placeholder="Email address or mobile">
+       </div>
+       <button type="submit" class="Search-button">Search</button>
+       <button type="button" class="cancel-button" onClick="resetForm()">Cancel</button>
+      </form>
+    </div>
+    
+</body>
+</html>

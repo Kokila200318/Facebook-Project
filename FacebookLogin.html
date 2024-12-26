@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        body{
+            background:linear-gradient(90deg,lightpink,blue,white);
+        }
+        .center{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        form{
+            padding: 0px 20px;
+            
+        }
+        input[type="email"],
+        input[type="password"]{
+            border-radius: 10px;
+            padding: 20px 70px;
+            margin: 15px;
+            font-size: x-large;
+
+        }
+        input[type="email"]:focus,
+        input[type="password"]:focus{
+            border-bottom: 20px;
+            border: none;
+            outline-color: black;
+        }
+        input::placeholder{
+            font-size: large;
+        }
+        input[type="submit"]{
+            background-color: blue;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 200px;
+        }
+        input[type="submit"]:hover{
+            background-color: darkblue;
+        }
+        .password{
+           text-align: center;
+           color: aliceblue;
+        }
+        form img{
+            height: 200px;
+            width: 450px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="center">
+    <form>
+        <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg" alt=""><br><br>
+        <input type="email" type="number" autofocus placeholder="Mobile number or email address"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <input type="submit" value="Login"><br><br>
+        <div class="password">Forgotten Password?</div>
+    </form>
+    </div>
+</body>
+</html>
